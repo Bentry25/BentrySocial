@@ -5,3 +5,32 @@
 <p>I'm hosted with GitHub Pages.</p>
 </body>
 </html>
+
+<html>
+<head>
+    <title>cables</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <style type="text/css">
+        #mypatch
+        {
+            width:800px;
+            height:480px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mypatch"></div>
+
+    <script type="text/javascript" src="js/libs.core.min.js"></script>
+    <script type="text/javascript" src="js/cables.min.js"></script>
+    <script type="text/javascript" src="js/ops.js"></script>
+
+    <script>
+        CABLES.EMBED.addPatch("mypatch",
+        {
+            patchFile:'cables_RectTestCables_html_1',
+            prefixAssetPath:''
+        });
+    </script>
+</body>
+</html>
