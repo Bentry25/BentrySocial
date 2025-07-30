@@ -3,11 +3,6 @@
 
 <head>
   <link rel="stylesheet" href="https://unpkg.com/7.css">
-  <style>
-
-
-  </style>
-
 
 
 
@@ -87,15 +82,16 @@
     <div>
    <section class="tabs">
   <menu role="tablist" aria-label="Tabs Template">
-    <button role="tab" aria-controls="tab-A" aria-selected="true">Tab A</button>
-    <button role="tab" aria-controls="tab-B" aria-selected="false">Tab B</button>
-    <button role="tab" aria-controls="tab-C" aria-selected="false">Tab C</button>
-    <button role="tab" aria-controls="tab-D" disabled="" aria-selected="false">Tab D</button>
+    <button role="tab" aria-controls="tab-A" aria-selected="true">About Me</button>
+    <button role="tab" aria-controls="tab-B" aria-selected="false">Projects</button>
+    <button role="tab" aria-controls="tab-C" aria-selected="false">Other Pages</button>
+    <button role="tab" aria-controls="tab-D" disabled="" aria-selected="false">WIP</button>
   </menu>
-  <article role="tabpanel" id="tab-A">Tab A is active <p>These tabs are broken while i'm testing locally, 
-    maybe they'll work when it's online?</p></article>
-  <article role="tabpanel" id="tab-B" hidden="true">Tab B is active</article>
-  <article role="tabpanel" id="tab-C" hidden="true">Tab C is active</article>
+  <article role="tabpanel" id="tab-A"><p>I'm from Houston, Texas.</p></article>
+  <article role="tabpanel" id="tab-B" hidden="true">I'm currently working on projects? I will update this.</article>
+  <article role="tabpanel" id="tab-C" hidden="true">Here's some other cool sites!
+    <p><a href=" #open-friends"> <button>Friends</button> </a></p>
+  </article>
   <article role="tabpanel" id="tab-D" hidden="true">Tab D is inactive</article>
 </section>
     </div>
@@ -126,7 +122,7 @@
                         <li>Link1</li>
                         <li>Link2</li>
                         <li>Link3</li>
-                        <a href=" #open-friends"> <button>Friends</button> </a>
+                        
 
                     </ul>
                 </aside>
@@ -138,11 +134,19 @@
             /* user styles */
 
             /* styles are what change the color and sizes of stuff on your site. */
-
+            
             /* these are variables that are being used in the code
     these tended to confuse some people, so I only kept 
     the images as variables */
-
+            .dialog{
+              min-width: 80%; 
+              max-width: 90vw;
+            }
+            .window {
+              box-sizing: border-box;
+              overflow: hidden;
+              }
+            
             :root {
                 --header-image: url('images/CloudsAndWetSand.jpg');
                 --body-bg-image: url('images/tileablewater2.webp');
@@ -403,7 +407,7 @@
 
 
 
-<div class="window active is-bright" id="open-friends" role="dialog" min-width: "500px" aria-labelledby="dialog-title">
+<div class="window active is-bright dialog" id="open-friends" role="dialog" aria-labelledby="dialog-title"  >
   <div class="title-bar">
           <div class="title-bar-text" id="open-friends"> Friends</div>
           <div class="title-bar-controls">
@@ -417,6 +421,7 @@
 
           <a href="https://prydt.xyz/">prydt.xyz</a> <br>
           <a href="https://junelc.xyz/">junelc.xyz</a> <br>
+          <a href="https://eidna.me/">eidna.me</a> <br>
           <a href="https://kingdomofakibaten.neocities.org/">kingdomofakibaten.neocities.org</a> <br>
           <a href="https://jeongwoo.xyz/">jeongwoo.xyz</a> <br>
           <a href="https://benaubin.com/">benaubin.com</a> <br>
@@ -425,13 +430,36 @@
 
         </div>
         
-        <footer style="text-align: right">
+        <footer style="width: 98.95%">
+          <div style="text-align: right;">
           <button onclick="history.back()">Cancel</button>
+          </div>
         </footer>
       </div>
   
 
+  <script>
+  //Tab issue fix?
   
+  const tabButtons = document.querySelectorAll('[role="tab"]');
+  const tabPanels = document.querySelectorAll('[role="tabpanel"]');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Deselect all tabs
+      tabButtons.forEach(btn => btn.setAttribute('aria-selected', 'false'));
+      // Hide all panels
+      tabPanels.forEach(panel => panel.hidden = true);
+
+      // Select the clicked tab
+      button.setAttribute('aria-selected', 'true');
+      // Show the associated panel
+      const tabId = button.getAttribute('aria-controls');
+      document.getElementById(tabId).hidden = false;
+    });
+  });
+</script>
+
 </body>
 
 </html>
