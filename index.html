@@ -1,478 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
 
-<head>
-  <link rel="stylesheet" href="https://unpkg.com/7.css">
+    <!-- Change your site title: (It is shown in the tab) -->
+    <title>Bentry</title>
 
+    <!-- Change your site description: (It is shown in Google results) -->
+    <meta content="Some music, some sound design, my blog, etc." name="description" />
 
+    <!-- Setting character encoding and viewport size. Do not remove. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-</head>
+    <!-- FavIcon (small image in tab), change to any image you want: -->
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
 
-<title>Bentry :)</title>
-
-
-<body>
-
-        <div id="container">
-            <div id="headerArea">
-                <!-- <div id="header" style="height: 400px;"></div> -->
-                <div class="title-bar" style="height: 30px">
-                    <div class="title-bar-text">Home</div>
-                      <div class="title-bar-controls">
-                      <button aria-label="Close"></button>
-                    </div>  
-                  </div>
-                <nav id="navbar" style="margin-bottom: 0px;">
-                    <ul role="menubar">
-                        <li role="menuitem" tabindex="0"><a href="#">Home</a></li>
-                        <li role="menuitem" tabindex="0><a href="#">Link</a></li>
-                        <li role="menuitem" tabindex="0><a href="#">Link</a></li>
-                        <li role="menuitem" tabindex="0><a href="#">Link</a></li>
-                        <li role="menuitem" tabindex="0><a href="#">Link</a></li>
-                        <li role="menuitem" tabindex="0><a href="#">Link</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div id="flex">
-                <aside id="leftSidebar" style="margin-right: 0px;">
-                    <h2>Currently Playing/Reading/Etc.</h2>
-                    <div class="box">
-                        <h3>Reading: <i>House in the Cerulean Sea</i> by TJ Klune</h3>
-                        <a href="https://www.bookshelf.town/user/Bentry"><button>Bookshelf.town</button></a>
-                        </ul>
-                        <h3>Playing: <i>Skin Deep</i> by Blendo Games</h3>
-                        <ul style="padding-left:10px;">
-                            <li>I just learned it's built on IDTech4 (the Doom3 engine!)</li>
-                            <p>I'm planning to create a list of games i've played, 
-                              but that'll have to wait until I get this page set up</p>
-                        </ul>
-                    </div>
-                    
-                </aside>
-                <main>
-                
-
-
-
-<div>
-<div class="window glass active" style="max-width: 100%">
-  <div class="title-bar">
-    <div class="title-bar-text">About</div>
-    <div class="title-bar-controls">
-
-    </div>
-  </div>
-  <div class="window-body has-space">
+    <!-- CSS: -->
+    <!-- You will have to change this to "../style.css" if this HTML file is in a subfolder, to "../../style.css" if this HTML file is in 2 subfolders, etc. -->
+    <link href="./style.css" rel="stylesheet" />
     
-    <h1>Hi, I'm Ben!</h1>
+    <!-- JavaScript: -->
+    <!-- You will have to change this to "../layout.js" if this HTML file is in a subfolder, to "../../layout.js" if this HTML file is in 2 subfolders, etc. -->
+    <script src="./layout.js"></script>
 
-    <p><strong>(Any Pronouns) </strong></p>
-    <div id="header" style="height: 200px;"></div>
-    <p>I'm a multimedia artist, (mainly a sound designer, but I've picked up tidbits of other disciplines along the way).
-    I've got a site for that, but this is a more informal and evolving page for side projects, blogging, etc! 
-    I'm trying to embrace the messiness of creative expression, so expect things to be wonky at times. :)</p>
-    <p>If you're interested in my formal portfolio: 
-      <a href="https://bengentry.com" target="_blank"> check it out here!</a> </p>
-      <p>(btw I made this image with Blender!)</p>
-    </div>
-  </div>
-</div>
-
-<div style="padding-top: 20px;">
-<div class="window glass active" style="max-width: 100%">
-  <div class="title-bar">
-    <div class="title-bar-text">More Info</div>
-    <div class="title-bar-controls">
-
-    </div>
-  </div>
-  <div class="window-body has-space">
-    <div>
-   <section class="tabs">
-  <menu role="tablist" aria-label="Tabs Template">
-    <button role="tab" aria-controls="tab-A" aria-selected="true">About Me</button>
-    <button role="tab" aria-controls="tab-B" aria-selected="false">Projects</button>
-    <button role="tab" aria-controls="tab-C" aria-selected="false">Other Pages</button>
-    <button role="tab" aria-controls="tab-D" disabled="" aria-selected="false">WIP</button>
-  </menu>
-  <article role="tabpanel" id="tab-A"><p>I'm from Houston, Texas.</p></article>
-  <article role="tabpanel" id="tab-B" hidden="true">I'm currently working on projects? I will update this.</article>
-  <article role="tabpanel" id="tab-C" hidden="true">Here's some other cool sites!
-    <p><a href=" #open-friends"> <button>Friends</button> </a></p>
-  </article>
-  <article role="tabpanel" id="tab-D" hidden="true">Tab D is inactive</article>
-</section>
-    </div>
-    </div>
-  </div>
-</div>
-
-
-                </main>
-                <aside id="rightSidebar" style="margin-left: 0px;">
-                    <h2>Updates</h2>
-                    <div class="box" style = "height: 400px; overflow: auto;">
-                      <h3>Jul 29, 2025</h3>
-                        <ul style="padding-left:10px;">
-                            <li>I'm using the 7.css theme for the window elements!</li>
-                            <li>The theming is a bit discordant at the moment, sorry!</li>
-                            <li>Hopefully it'll come together once I figure out what I'm doing haha.</li>  
-                      <h3>Jul 28, 2025</h3>
-                        <ul style="padding-left:10px;">
-                            <li>I'm starting to learn HTML/CSS</li>
-                            <li>I'm using sadgrl's website template as a starting point, 
-                              but I'm hoping to make some changes here and there.</li>
-                        </ul>
-                    </div>
-                    <h2>I'll put other links here!</h2>
-                    <h3>Links</h3>
-                    <ul>
-                        <li>Link1</li>
-                        <li>Link2</li>
-                        <li>Link3</li>
-                        
-
-                    </ul>
-                </aside>
-            </div>
-            <footer id="footer" style="margin-top: 0px;">CC0 Public Domain, 2022</footer>
-        </div>
-        <!-- THIS IS THE CSS !-->
-        <style>
-            /* user styles */
-
-            /* styles are what change the color and sizes of stuff on your site. */
-            
-            /* these are variables that are being used in the code
-    these tended to confuse some people, so I only kept 
-    the images as variables */
-            .dialog{
-              min-width: 80%; 
-              max-width: 90vw;
-            }
-            .window {
-              box-sizing: border-box;
-              overflow: hidden;
-              }
-            
-            :root {
-                --header-image: url('images/InstancingIslandRender3.png');
-                --body-bg-image: url('images/tileablewater2.webp');
-
-                /* colors */
-                --content: #43256E;
-            }
-
-            /* if you have the URL of a font, you can set it below */
-            /* feel free to delete this if it's not your vibe */
-
-            /* this seems like a lot for just one font and I would have to agree 
-    but I wanted to include an example of how to include a custom font.
-    If you download a font file you can upload it onto your Neocities
-    and then link it! Many fonts have separate files for each style
-    (bold, italic, etc. T_T) which is why there are so many!
+    <script>
+      // Template generated with petrapixel's layout generator.
+      // (Please do not remove this credit.)
+      console.log("%cTemplate generated with petrapixel's layout generator: https://petrapixel.neocities.org/coding/layout-generator", "font-size: 14pt; color: #922a45; background: #ffd3ef");
+    </script>
+  </head>
+  <body>
     
-    */
+    <!-- The next line is a skip-to-content link for keyboard users. Do not remove it! -->
+    <a href="#content" id="skip-to-content-link">Skip to content</a>
 
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
-            }
+    <div class="layout">
+      
+      <!-- =============================================== -->
+      <!-- Header (and Sidebars) will be loaded per JavaScript! Edit layout.js to change. -->
+      <!-- =============================================== -->
 
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
-                font-weight: bold;
-            }
-
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
-                font-style: italic;
-            }
-
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
-                font-style: italic;
-                font-weight: bold;
-            }
-
-            body {
-                font-family: 'Nunito', sans-serif;
-                margin: ;
-                /* background-color: #ffffff; */
-                /* you can delete the line below if you'd prefer to not use an image */
-                background-size: 65px;
-                color: #4b5d7e;
-                background-image: var(--body-bg-image);
-            }
-
-            * {
-                box-sizing: border-box;
-            }
-
-            /* below this line is CSS for the layout */
-
-            /* this is a CSS comment
-    to uncomment a line of CSS, remove the * and the /
-    before and after the text */
-
-
-            /* the "container" is what wraps your entire website */
-            /* if you want something (like the header) to be Wider than
-    the other elements, you will need to move that div outside
-    of the container */
-            #container {
-                max-width: 900px;
-                /* this is the width of your layout! */
-                /* if you change the above value, scroll to the bottom
-      and change the media query according to the comment! */
-                margin: 0 auto;
-                /* this centers the entire page */
-            }
-
-            /* the area below is for all links on your page
-    EXCEPT for the navigation */
-            #container a {
-                color: #1492f9;
-                font-weight: bold;
-                /* if you want to remove the underline
-      you can add a line below here that says:
-      text-decoration:none; */
-            }
-
-            #header {
-                width: 100%;
-                background-color: #5e4e8c;
-                /* header color here! */
-                height: 150px;
-                /* this is only for a background image! */
-                /* if you want to put images IN the header, 
-      you can add them directly to the <div id="header"></div> element! */
-                background-image: var(--header-image);
-                background-size: 100%;
-            }
-
-            /* navigation section!! */
-            #navbar {
-                height: 40px;
-                background-color: #141e45;
-                /* navbar color */
-                width: 100%;
-            }
-
-            #navbar ul {
-                display: flex;
-                padding: 0;
-                margin: 0;
-                list-style-type: none;
-                /* justify-content: space-evenly; */
-            }
-
-            #navbar li {
-                padding-top: 10px;
-            }
-
-            /* navigation links*/
-            #navbar li a {
-                color: #86e3cc;
-                /* navbar text color */
-                font-weight: 800;
-                text-decoration: none;
-                /* this removes the underline */
-            }
-
-            /* navigation link when a link is hovered over */
-            #navbar li a:hover {
-                color: #a49cba;
-                text-decoration: underline;
-            }
-
-            #flex {
-                display: flex;
-            }
-
-            /* this colors BOTH sidebars
-    if you want to style them separately,
-    create styles for #leftSidebar and #rightSidebar */
-            aside {
-                background-color: #141e45;
-                width: 200px;
-                padding: 20px;
-                font-size: smaller;
-                /* this makes the sidebar text slightly smaller */
-            }
-
-
-            /* this is the color of the main content area,
-    between the sidebars! */
-            main {
-                background-color: transparent;
-                flex: 1;
-                padding: 20px;
-                order: 2;
-            }
-
-            /* what's this "order" stuff about??
-    allow me to explain!
-    if you're using both sidebars, the "order" value
-    tells the CSS the order in which to display them.
-    left sidebar is 1, content is 2, and right sidebar is 3! */
-
-            */ #leftSidebar {
-                order: 1;
-            }
-
-            #rightSidebar {
-                order: 3;
-            }
-
-            footer {
-                background-color: #13092D;
-                /* background color for footer */
-                width: 100%;
-                height: 40px;
-                padding: 10px;
-                text-align: center;
-                /* this centers the footer text */
-            }
-
-            h1,
-            h2,
-            h3 {
-                color: #42e1af;
-            }
-
-            h1 {
-                font-size: 25px;
-            }
-
-            strong {
-                /* this styles bold text */
-                color: #62c2a3;
-            }
-
-            /* this is just a cool box, it's the darker colored one */
-            .box {
-                background-color: #13092D;
-                border: 1px solid #64f5c7;
-                padding: 10px;
-            }
-
-            /* CSS for extras */
-
-            #topBar {
-                width: 100%;
-                height: 30px;
-                padding: 10px;
-                font-size: smaller;
-                background-color: #13092D;
-            }
-
-
-            /* BELOW THIS POINT IS MEDIA QUERY */
-
-            /* so you wanna change the width of your page? 
-    by default, the container width is 900px.
-    in order to keep things responsive, take your new height,
-    and then subtrack it by 100. use this new number as the 
-    "max-width" value below
-    */
-
-            @media only screen and (max-width: 800px) {
-                #flex {
-                    flex-wrap: wrap;
-                }
-
-                aside {
-                    width: 100%;
-                }
-
-                /* the order of the items is adjusted here for responsiveness!
-      since the sidebars would be too small on a mobile device.
-      feel free to play around with the order!
-      */
-                main {
-                    order: 1;
-                }
-
-                #leftSidebar {
-                    order: 2;
-                }
-
-                #rightSidebar {
-                    order: 3;
-                }
-
-                #navbar ul {
-                    flex-wrap: wrap;
-                }
-            }
-        </style>
-
-    
-
-
-
-<div class="window active is-bright dialog" id="open-friends" role="dialog" aria-labelledby="dialog-title"  >
-  <div class="title-bar">
-          <div class="title-bar-text" id="open-friends"> Friends</div>
-          <div class="title-bar-controls">
-            <button aria-label="Close" onclick="history.back()"></button>
-          </div>
-        </div>
-        <div class="window-body has-space">
-
-
-          <h2 class="instruction instruction-primary"> Friends:</h2>
-
-          <a href="https://prydt.xyz/">prydt.xyz</a> <br>
-          <a href="https://junelc.xyz/">junelc.xyz</a> <br>
-          <a href="https://eidna.me/">eidna.me</a> <br>
-          <a href="https://kingdomofakibaten.neocities.org/">kingdomofakibaten.neocities.org</a> <br>
-          <a href="https://jeongwoo.xyz/">jeongwoo.xyz</a> <br>
-          <a href="https://benaubin.com/">benaubin.com</a> <br>
-          <a href="https://danielzting.github.io/">danielzting.github.io</a>
-
-
-        </div>
-        
-        <footer style="width: 98.95%">
-          <div style="text-align: right;">
-          <button onclick="history.back()">Cancel</button>
-          </div>
-        </footer>
-      </div>
   
+      <main id="content"> <!-- Do NOT remove the ID here -->
 
-  <script>
-  //SCRIPTS!
-  //Tab issue fix?
+        <noscript>Please enable JavaScript to view this website!</noscript>
+
+        <!-- =============================================== -->
+        <!-- MAIN CONTENT -->
+        <!-- =============================================== -->
+
+        <section>
+          <h1>Howdy!</h1>
+          <p>I'm Ben, and this is my website.</p>
+          <p>I've got a more "official" site at <a hre="bengentry.com">bengentry.com</a> 
+            but this is where blogging, WIPs, and other messy stuff will live.</p>
+
+
+            <script>NekoType="blue"</script>
+              <h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
+              href="https://webneko.net">Neko</a></h1>
+          
+            <hr/> 
+        </section>
+
+
+        <section>
+            <h1>Who Am I?</h1>
+              <p>I dabble in a lot of things, but my work lately has been in environmental policy and interactive media.</p>
+              <p> Other interests include (but are not limited to): museums, music, sound design, and VJ-ing (using TouchDesigner).</p>
+              <p> Some things I want to do more of: embroidery, 3D Art, writing and/or poetry. </p>
+            <hr/>
+          </section>
+          <p>For now, this website will be relatively sparse. I may add some pages, but maybe it's worth keeping things simple. We'll see! </p> 
+          <p>Feel free to reach out via the guestbook! I'm still working on personalizing it, but it should be functional now.</p>
+
+
+          
+      </main>
+      
+      <!-- =============================================== -->
+      <!-- Footer will be loaded per JavaScript! Edit layout.js to change. -->
+      <!-- =============================================== -->
+
   
-  const tabButtons = document.querySelectorAll('[role="tab"]');
-  const tabPanels = document.querySelectorAll('[role="tabpanel"]');
-
-  tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      // Deselect all tabs
-      tabButtons.forEach(btn => btn.setAttribute('aria-selected', 'false'));
-      // Hide all panels
-      tabPanels.forEach(panel => panel.hidden = true);
-
-      // Select the clicked tab
-      button.setAttribute('aria-selected', 'true');
-      // Show the associated panel
-      const tabId = button.getAttribute('aria-controls');
-      document.getElementById(tabId).hidden = false;
-    });
-  });
-</script>
+    <!-- Closing .layout: -->
+    </div>
 
 
-
-</body>
-
+    <!-- Add any additional Javascript code (<script></script>) here. -->
+  </body>
 </html>
-
