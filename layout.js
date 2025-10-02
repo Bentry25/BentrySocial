@@ -28,7 +28,11 @@ function headerHTML() {
 
       <header>
 
-        <div class="header-content">
+        <div class="header-content" style="background-image: url('images/waterloop_inverted.gif');
+          background-repeat: no-repeat;
+          border-radius: 15px;
+          background-size: 100% 100%;
+        ">
 	        <div class="header-title">Bentry</div>
 	        
         	
@@ -110,7 +114,7 @@ function footerHTML() {
       <!-- =============================================== -->
 
       <footer>
-            <div>Footer Text. <a href="/">Link.</a> Template generated with <a href="https://petrapixel.neocities.org/coding/layout-generator.html">petrapixel's layout generator</a>.</div>
+            <div>Template generated with <a href="https://petrapixel.neocities.org/coding/layout-generator.html">petrapixel's layout generator</a>.</div>
       </footer>`;
 }
 
